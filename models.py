@@ -64,7 +64,8 @@ def cnn(x_dict):
 
 def svm(x_dict):
     #TODO: Implementation of svm. Need to refer LeCun's Paper for this.
- 
+    return None
+
 model_architecture = {
     "nn" : nn,
     "dnn": dnn,

@@ -27,10 +27,6 @@ def main():
     args = parser.parse_args()
     # Obtain the mnist dataset.
     mnist = input_data.read_data_sets("/tmp/data/",one_hot=False)
-    print(mnist.train.images.shape)
-    print(mnist.train.labels.shape)
-    print(mnist.test.images.shape)
-    print(mnist.test.labels.shape)
     # Get the model function.
     model = tf.estimator.Estimator(model_fn=estimator.model_fn, params=args)
     # Model Training.
